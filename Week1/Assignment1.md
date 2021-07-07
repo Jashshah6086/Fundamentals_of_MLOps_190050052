@@ -15,4 +15,13 @@ Question 2
 
 A machine learning model is interpretable if we can fundamentally understand how it arrived at a specific decision. A model is explainable if we can understand how a specific node in a complex model technically influences the output.
 
-Linear Regression is easily interpretable ML model. How much a parameter influeneces the output can be done by calculating p-value.
+Interpretation of a Numerical Feature
+An increase of feature xk by one unit increases the prediction for y by βk units when all other feature values remain fixed.
+
+Another important measurement for interpreting linear models is the R-squared measurement. R-squared tells you how much of the total variance of your target outcome is explained by the model. The higher R-squared, the better your model explains the data.The SSE tells you how much variance remains after fitting the linear model, which is measured by the squared differences between the predicted and actual target values. SST is the total variance of the target outcome. R-squared tells you how much of your variance can be explained by the linear model. R-squared ranges between 0 for models where the model does not explain the data at all and 1 for models that explain all of the variance in your data.It is better to use the adjusted R-squared, which accounts for the number of features used in the model.It is not meaningful to interpret a model with very low (adjusted) R-squared, because such a model basically does not explain much of the variance. Any interpretation of the weights would not be meaningful.
+
+The importance of a feature in a linear regression model can be measured by the absolute value of its t-statistic or p-value.
+
+Source : https://christophm.github.io/interpretable-ml-book/limo.html
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
